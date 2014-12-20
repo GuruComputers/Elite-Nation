@@ -7,23 +7,19 @@ require('config.php');
 $tbl_name="members"; // Table name 
 
 // Connect to server and select database.
-	$conn = new mysqli($servername, $username, $password, $db_name);
-
-	// Check connection
-	if ($conn->connect_error) {
-    	die("Connection failed: " . $conn->connect_error);
-	} 
+$link = mysqli_connect($host, $username, $password);
+mysqli_select_db($link, $db_name) or die(mysql_error());
 
 // Define $myusername and $mypassword 
 $myusername=$_POST['myusername']; 
 $mypassword=$_POST['mypassword']; 
 
 // Encrypt Password
-$encrypted_mypassword=md5($mypassword);
-$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$encrypted_mypassword'";
+// $encrypted_mypassword=md5($mypassword);
+$sql="SELECT * FROM $tbl_name WHERE username='RJ31337'";
 $result=mysql_query($sql);
 
-echo $encrypted_password;
+echo "Hello World " . $result;
 
 // Mysql_num_row is counting table row
 $count=mysql_num_rows($result);
