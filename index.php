@@ -26,7 +26,6 @@
 		<div id="footer">
 
 		</div>
->>>>>>> FETCH_HEAD
 	</div>
 </body>
 </html>
