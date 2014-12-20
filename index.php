@@ -16,7 +16,15 @@
 </head>
 <body>
 	<div id="wrapper">
-		
+		<div id="header">
+
+		</div>
+		<div id="content">
+
+		</div>
+		<div id="footer">
+
+		</div>
 	</div>
 </body>
 </html>
