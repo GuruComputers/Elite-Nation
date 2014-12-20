@@ -15,10 +15,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Indie+Flower|Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="wrapper">
+	<div id="login">
 		<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
 			<tr>
-				<form name="form1" method="post" action="checklogin.php">
+				<form action="checklogin.php" method="post" accept-charset="utf-8">
 					<td>
 						<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 							<tr>

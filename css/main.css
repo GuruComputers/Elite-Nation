@@ -3,10 +3,13 @@
 **********************/
 body {
 	background-color: #000000;
+	height: 400px;
+	width: 940px;
 }
 
-#wrapper {
-	width: 940px;
+#login {
+	width: 350px;
+	margin-top: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	background: white;
