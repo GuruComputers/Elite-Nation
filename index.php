@@ -16,11 +16,9 @@
 </head>
 <body>
 	<div id="wrapper">
-<<<<<<< HEAD
-		<h3>Elite Nation</h3>
-=======
-		<div id="header">
 
+		<div id="header">
+			<h3>Elite Nation</h3>
 		</div>
 		<div id="content">
 
