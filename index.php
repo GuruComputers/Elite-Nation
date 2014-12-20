@@ -17,38 +17,28 @@
 <body>
 	<div id="wrapper">
 
-		<div class="header">
+		<nav>
 			<h3>Elite Nation</h3>
-		</div>
-		<div class="content">
+		</nav>
+		<section>
 
-		</div>
-		<div class="footer">
-		<center>
-			<a href="http://twitter.com/EliteNation">
-			<?php
-				echo '<img src="'.$root.'img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">';
-			?>
-			</a>
-			<a href="http://facebook.com/EliteNation">
-			<?php
-				echo '<img src="'.$root.'img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">';
-			?>
-			</a>
-			<?php
-				$start=2014;
-				$current=date("Y");
-				$cy="";
-				if ($current=$start) {
-					$cy=$start;
-				}
-				if ($current>$start) {
-					$cy=$start."-".$current;
-				}
-				echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
-				?>
-		</center>
-		</div>
+		</section>
+		<footer>
+			<center>
+				<?php
+					$start=2014;
+					$current=date("Y");
+					$cy="";
+					if ($current=$start) {
+						$cy=$start;
+					}
+					if ($current>$start) {
+						$cy=$start."-".$current;
+					}
+					echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
+					?>
+			</center>
+		</footer>
 	</div>
 </body>
 </html>
