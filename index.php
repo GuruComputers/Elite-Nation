@@ -17,14 +17,15 @@
 <body>
 	<div id="wrapper">
 
-		<div id="header">
+		<div class="header">
 			<h3>Elite Nation</h3>
 		</div>
-		<div id="content">
+		<div class="content">
 
 		</div>
-		<div id="footer">
-		<a href="http://twitter.com/EliteNation">
+		<div class="footer">
+		<center>
+			<a href="http://twitter.com/EliteNation">
 			<?php
 				echo '<img src="'.$root.'img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">';
 			?>
@@ -45,7 +46,8 @@
 					$cy=$start."-".$current;
 				}
 				echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
-			?>
+				?>
+		</center>
 		</div>
 	</div>
 </body>
