@@ -16,7 +16,19 @@
 </head>
 <body>
 	<div id="wrapper">
+<<<<<<< HEAD
 		<h3>Elite Nation</h3>
+=======
+		<div id="header">
+
+		</div>
+		<div id="content">
+
+		</div>
+		<div id="footer">
+
+		</div>
+>>>>>>> FETCH_HEAD
 	</div>
 </body>
 </html>
