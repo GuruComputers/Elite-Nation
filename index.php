@@ -24,7 +24,28 @@
 
 		</div>
 		<div id="footer">
-
+		<a href="http://twitter.com/EliteNation">
+			<?php
+				echo '<img src="'.$root.'img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">';
+			?>
+			</a>
+			<a href="http://facebook.com/EliteNation">
+			<?php
+				echo '<img src="'.$root.'img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">';
+			?>
+			</a>
+			<?php
+				$start=2014;
+				$current=date("Y");
+				$cy="";
+				if ($current=$start) {
+					$cy=$start;
+				}
+				if ($current>$start) {
+					$cy=$start."-".$current;
+				}
+				echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
+			?>
 		</div>
 	</div>
 </body>
