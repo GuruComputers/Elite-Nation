@@ -1,0 +1,78 @@
+@media screen and (max-width: 1050px) {
+	#login, #profile {
+		display: inline-block;
+		position: absolute;
+    	top: 20%;
+    	left: 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#mobile-password {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	#login, #profile {
+		display: inline-block;
+		position: absolute;
+    	top: 22%;
+    	left: 0;
+	}
+
+	#login ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	#login li:first-child {
+		padding-left: 0;
+		display: block;
+		float: left;
+		clear: both;
+	}
+
+	#login li:nth-of-type(2) {
+		display: block;
+		padding-left: 10px;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#login ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	#login li:first-child {
+		padding-left: 0;
+		display: block;
+		clear: both;
+	}
+
+	#login li:nth-of-type(2) {
+		display: block;
+		padding-left: 10px;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 421px) {
+	#login ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	#login li:first-child {
+		padding-left: 0;
+		display: block;
+		clear: both;
+	}
+
+	#login li:nth-of-type(2) {
+		display: block;
+		padding-left: 0px;
+		float: left;
+	}
+}

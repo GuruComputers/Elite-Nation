@@ -25,11 +25,10 @@ body {
 
 .logo {
 	width: 20%;
-	min-width: 125px;
+	min-width: 155px;
 	height: auto;
 	margin-left: -5%;
-	clear: both;
-	display: block;
+	display: inline-block;
 }
 
 #login, #profile {
@@ -37,7 +36,19 @@ body {
 	position: absolute;
     top: 5px;
     right: 5px;
-} 
+}
+
+#mobile-user, #mobile-password {
+	display: inline-block;
+}
+
+
+#mobile-logo {
+	height: auto;
+	min-width: 155px;
+	width: 100%;
+	display: inline-block;
+}
 
 header {
 	height: auto;
@@ -65,14 +76,9 @@ footer {
 	height: auto;
 }
 
-.user-tools {
-	text-align: center;
-}
-
 /**********************
      FONT STYLES 
 **********************/
-
 p {
 	font-size: 0.8rem;
 }
@@ -80,8 +86,38 @@ p {
 /**********************
      LINK STYLES 
 **********************/
-
 a, a:visited {
 	text-decoration: none;
 	color: #00CC00;
+}
+
+/**********************
+  USER TOOLS STYLES 
+**********************/
+.user-tools {
+	display: inline-block;
+}
+
+.anti-oops {
+	line-height: 0.5em;
+}
+
+#submit_button {
+	border-radius: 5px;
+	border: none;
+}
+
+#login ul {
+	list-style: none;
+	text-align: center;
+}
+
+#login li:first-child {
+	padding-left: 100px;
+	display: inline-block;
+}
+
+#login li:nth-child(2) {
+	display: inline-block;
+	padding-left: 150px;
 }
