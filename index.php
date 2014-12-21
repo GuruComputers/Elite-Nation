@@ -13,19 +13,10 @@ if(!$_SESSION['login_user']==""){
 	<?php
 		$page = "home";
 		$root = "./";
-		$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-		$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-		$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-		$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-		$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-		$fire = strpos ($_SERVER['HTTP_USER_AGENT'],"Mobile");
 		echo '<link rel="stylesheet" href="'.$root.'css/normalize.css">'."\n";
 		echo '<link rel="stylesheet" href="'.$root.'css/main.css">'."\n";
-		if ($iphone || $android || $palmpre || $ipod || $berry || $fire == false) 
-			{
-				if (date('m') == '12') {
+		if (date('m') == '12') {
 	 			echo '<link rel="stylesheet" href="'.$root.'css/snow.css">'."\n";
-				}
 			}
 		echo '<link rel="stylesheet" href="'.$root.'css/responsive.css">'."\n";
 	?>
