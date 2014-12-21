@@ -6,7 +6,9 @@ include('session.php');
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Elite Nation</title>
+	<?php
+		echo "<title>Elite Nation : ".$_SESSION['login_user']."</title>";
+	?>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
 	<?php
 		$page = "home";
