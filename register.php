@@ -3,7 +3,6 @@ include('login.php'); // Includes Login Script
 if(!$_SESSION['login_user']==""){
   header('Location: profile.php');
 }
-$userip = $_SERVER['REMOTE_ADDR']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -102,17 +101,10 @@ $m_count = mysql_num_rows($query);
 if($m_count >= "1"){
 echo 'This name has already been used.!';
 }else{
-  // This makes sure that people don't signup with the same IP
-$sql = "SELECT id FROM users WHERE username='".mysql_real_escape_string($_POST['Username'])."'";
-$query = mysql_query($sql) or die(mysql_error());
-$m_count = mysql_num_rows($query);
-if($m_count >= "1"){
-echo 'This IP has already been used.!';
-}else{
 $hash = md5($_POST['Email']); // Generate 32 character hash from email address
 $password = md5($_POST['Password']); // this is a md5 hash. its encrypt your password so it isnt easily hackable
 // The id is blank because it is an auto_increment  which mean it will auto add a value to every user and the are all different. this is mainly so we dont have dupilcate.
-$sql = "INSERT INTO users SET id = '', username = '".$_POST['Username']."' , password= '$password', mail= '".$_POST["Email"]."', hash= '$hash', signup_ip= '".$_SERVER['REMOTE_ADDR']."'";
+$sql = "INSERT INTO users SET id = '', username = '".$_POST['Username']."' , password= '$password', mail= '".$_POST["Email"]."', hash= '$hash'";
 $res = mysql_query($sql);
 $to = $_POST['Email'];
     $from = "no-reply@gurucomputers.co.uk";
@@ -139,7 +131,7 @@ http://www.gurucomputers.co.uk/game/verify.php?hash=$hash
  
     mail($to, $subject, $message, $headers);            
  
-echo "".$_POST['Username'].", Welcome to the game. An activation link has been sent to the email address you specified.";
+echo "".$_POST['Username'].", Welcome to the game.";
 }}}
                         }
  
