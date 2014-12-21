@@ -30,29 +30,25 @@
 				<label>Password :</label>
 				<input id="password" name="password" placeholder="**********" type="password">
 				<input name="submit" type="submit" value=" Login ">
-				<span><?php echo $error; ?></span>
+
 				</form>
 			</div>
 		</section>
 		<footer>
 			<center>
 				<?php
-					$start=2013;
-					$current=date("Y");
-					$cy="";
-					if ($current=$start) {
-						$cy=$start;
-					$start = "2013";
+					$start = "2014";
 					$current = gmdate("Y");
 					$cy = "";
 					if ($current == $start) {
 						$cy = $start;
 					}
+
 					if ($current > $start) {
 						$cy=$start."-".$current;
 					}
-					echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
-					?>
+					echo "&copy"." ".$cy." Guru Computers Ltd"."\n";
+					?>			
 			</center>
 		</footer>
 	</div>
