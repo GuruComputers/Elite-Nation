@@ -32,6 +32,10 @@ if(!$_SESSION['login_user']==""){
 				<label>Password :</label>
 				<input id="password" name="password" placeholder="**********" type="password">
 				<input name="submit" type="submit" value=" Login ">
+				<br /><br />
+				<span class="user-tools">
+					<a href="register.php">Register Now</a>          <a href="forgot.php">Forgotten Password?</a>
+				</span>
 			</form>
 		</header>
 		<section>

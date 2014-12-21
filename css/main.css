@@ -64,10 +64,23 @@ footer {
 	height: auto;
 }
 
+.user-tools {
+	text-align: center;
+}
+
 /**********************
      FONT STYLES 
 **********************/
 
 p {
 	font-size: 0.8rem;
+}
+
+/**********************
+     LINK STYLES 
+**********************/
+
+a, a:visited {
+	text-decoration: none;
+	color: #00CC00;
 }
