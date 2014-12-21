@@ -86,11 +86,8 @@ echo "You need to accept the Terms & conditions  in order to sign up.!";
 // this check and makes sure that their are no duplication with the email
 
 $sql = "SELECT id FROM users WHERE mail='".mysql_real_escape_string($_POST['Email'])."'";
-
 $query = mysql_query($sql) or die(mysql_error());
-
 $m_count = mysql_num_rows($query);
-
 if($m_count >= "1"){
 echo 'This email has already been used.!';
 }else{
