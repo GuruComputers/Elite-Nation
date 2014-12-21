@@ -23,8 +23,8 @@ body {
 	color: #00CC00;
 }
 
-#logo {
-	
+.logo {
+	vertical-align: top;
 }
 
 nav {
