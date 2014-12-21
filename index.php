@@ -16,20 +16,18 @@
 </head>
 <body>
 	<div id="wrapper">
-
-<<<<<<< Updated upstream
 		<nav>
 			<h3>Elite Nation</h3>
 		</nav>
 		<section>
-=======
+
 		<div id="header">
-			<img src="img/logo.png" alt="Elite Nation Logo" />
+			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
 		</div>
 		<div id="content">
->>>>>>> Stashed changes
 
 		</section>
+
 		<footer>
 			<center>
 				<?php
@@ -46,6 +44,7 @@
 					?>
 			</center>
 		</footer>
+
 	</div>
 </body>
 </html>
