@@ -37,19 +37,16 @@
 		<footer>
 			<center>
 				<?php
-<<<<<<< HEAD
 					$start=2013;
 					$current=date("Y");
 					$cy="";
 					if ($current=$start) {
 						$cy=$start;
-=======
 					$start = "2013";
 					$current = gmdate("Y");
 					$cy = "";
 					if ($current == $start) {
 						$cy = $start;
->>>>>>> FETCH_HEAD
 					}
 					if ($current > $start) {
 						$cy=$start."-".$current;
