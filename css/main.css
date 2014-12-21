@@ -59,6 +59,7 @@ footer {
 
 .social-media {
 	width: 2.5%;
+	min-width: 20px;
 	height: auto;
 }
 
