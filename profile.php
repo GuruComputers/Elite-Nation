@@ -34,22 +34,9 @@ include('session.php');
 		<section>
 
 		</section>
-		<footer>
-			<center>
-				<?php
-					$start = "2014";
-					$current = gmdate("Y");
-					$cy = "";
-					if ($current == $start) {
-						$cy = $start;
-					}
-					if ($current > $start) {
-						$cy=$start."-".$current;
-					}
-					echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
-					?>
-			</center>
-		</footer>
+		<?php
+			include "footer.php";
+		?>
 	</div>
 </body>
 </html>
