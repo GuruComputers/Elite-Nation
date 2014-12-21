@@ -121,3 +121,23 @@ a, a:visited {
 	display: inline-block;
 	padding-left: 150px;
 }
+
+/**********************
+  PAGE: HOMEPAGE
+**********************/
+.css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}

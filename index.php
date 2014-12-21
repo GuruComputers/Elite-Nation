@@ -53,11 +53,7 @@ if(!$_SESSION['login_user']==""){
 		</header>
 		<section>
 			<center>
-				<h1>Welcome to Elite Nation</h1>
-				<h2>So what is Elite Nation?</h2>
-				<p>Elite Nation is an upcoming Hacking MMO created from the ground up.</p> 
-				<p>We were fed up of all the hacking games being the same, and all either promoting Pay-to-Win</p>
-				<p>or allowing players to be too powerful and in doing so, making the game unplayable for most players.</p>
+				<h1 class="css-typing">Welcome to Elite Nation</h1>
 			</center>
 		</section>
 		<?php
