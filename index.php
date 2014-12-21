@@ -30,15 +30,9 @@ if(!$_SESSION['login_user']==""){
 <body>	
 	<div id="wrapper">
 		<header>
-<<<<<<< HEAD
 		<div id="mobile-logo">
 			<a href="index.php"><img class="logo" src="img/logo.png" alt="Elite Nation Logo" /></a>
 		</div>
-=======
-			<div id="mobile-logo">
-				<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
-			</div>
->>>>>>> FETCH_HEAD
 			<br class="anti-oops" />
 			<form id="login" action="" method="post">
 				<div id="mobile-user">
