@@ -1,3 +1,7 @@
+<?php
+include('session.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,20 +23,13 @@
 	<div id="wrapper">
 		<nav>
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
+			<div id="profile">
+				<b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
+				<b id="logout"><a href="logout.php">Log Out</a></b>
+			</div>
 		</nav>
 		<section>
-			<h1>Login Test</h1>
-			<div id="login">
-				<h2>Login Form</h2>
-				<form action="" method="post">
-				<label>UserName :</label>
-				<input id="name" name="username" placeholder="username" type="text">
-				<label>Password :</label>
-				<input id="password" name="password" placeholder="**********" type="password">
-				<input name="submit" type="submit" value=" Login ">
-				<span><?php echo $error; ?></span>
-				</form>
-			</div>
+
 		</section>
 		<footer>
 			<center>

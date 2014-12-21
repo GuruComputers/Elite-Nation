@@ -14,7 +14,7 @@ body {
 #wrapper {
 	background-color: #000000;
 	min-height: 100%;
-	width:50%;
+	width:75%;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -23,9 +23,10 @@ body {
 }
 
 .logo {
-	width: 250px;
-	height: 155px;
-	margin-left: -50px;
+	width: 20%;
+	min-width: 125px;
+	height: auto;
+	margin-left: -5%;
 }
 
 nav {
@@ -42,4 +43,12 @@ footer {
     bottom: 0;
     height: 50px;
     width: 100%;
+}
+
+/**********************
+     FONT STYLES 
+**********************/
+
+p {
+	font-size: 0.8rem;
 }
