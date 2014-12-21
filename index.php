@@ -1,3 +1,6 @@
+<?php
+include('login.php'); // Includes Login Script
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,18 +24,19 @@
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
 		</nav>
 		<section>
-			<h1>Login Test</h1>
-			<div id="login">
-				<h2>Login Form</h2>
-				<form action="" method="post">
-				<label>UserName :</label>
-				<input id="name" name="username" placeholder="username" type="text">
-				<label>Password :</label>
-				<input id="password" name="password" placeholder="**********" type="password">
-				<input name="submit" type="submit" value=" Login ">
-
-				</form>
-			</div>
+			<center>
+				<h1>Login Test</h1>
+				<div id="login">
+					<h2>Login Form</h2>
+					<form action="" method="post">
+						<label>UserName :</label>
+						<input id="name" name="username" placeholder="username" type="text">
+						<label>Password :</label>
+						<input id="password" name="password" placeholder="**********" type="password">
+						<input name="submit" type="submit" value=" Login ">
+					</form>
+				</div>
+			</center>
 		</section>
 		<footer>
 			<center>
