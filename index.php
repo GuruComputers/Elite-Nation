@@ -23,16 +23,16 @@ if(!$_SESSION['login_user']==""){
 </head>
 <body>	
 	<div id="wrapper">
-		<nav>
+		<header>
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
-				<form id="login" action="" method="post">
-					<label>UserName :</label>
-					<input id="name" name="username" placeholder="username" type="text">
-					<label>Password :</label>
-					<input id="password" name="password" placeholder="**********" type="password">
-					<input name="submit" type="submit" value=" Login ">
-				</form>
-		</nav>
+			<form id="login" action="" method="post">
+				<label>UserName :</label>
+				<input id="name" name="username" placeholder="username" type="text">
+				<label>Password :</label>
+				<input id="password" name="password" placeholder="**********" type="password">
+				<input name="submit" type="submit" value=" Login ">
+			</form>
+		</header>
 		<section>
 				
 		</section>
