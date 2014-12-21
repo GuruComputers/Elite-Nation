@@ -54,6 +54,7 @@ if(!$_SESSION['login_user']==""){
 		<section>
 			<center>
 				<h1 class="css-typing">Welcome to Elite Nation</h1>
+				<?php echo $error; ?>
 			</center>
 		</section>
 		<?php

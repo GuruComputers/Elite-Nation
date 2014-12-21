@@ -56,15 +56,15 @@ if(!$_SESSION['login_user']==""){
 				<?php
 				include_once('includes/db_config.php');
 
-             	if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !empty($_GET['hash'])){
+             	if(isset($_GET['hash']) && !empty($_GET['hash'])){
              	// Verify data
              	$hash = mysql_escape_string($_GET['hash']); // Set hash variable
              }
-             $search = mysql_query("SELECT mail, hash, active FROM users WHERE hash='".$hash."' AND active='0'") or die(mysql_error()); 
+             $search = mysql_query("SELECT hash, active FROM users WHERE hash='".$hash."' AND active='0'") or die(mysql_error()); 
              $match  = mysql_num_rows($search);
 
              if($match > 0){
-             	mysql_query("UPDATE users SET active='1' WHERE email='".$email."' AND hash='".$hash."' AND active='0'") or die(mysql_error());
+             	mysql_query("UPDATE users SET active='1' WHERE hash='".$hash."' AND active='0'") or die(mysql_error());
              	echo '<div class="statusmsg">Your account has been activated, you can now login</div>';
              } else {
              	echo '<div class="statusmsg">The url is either invalid or you already have activated your account.</div>';
