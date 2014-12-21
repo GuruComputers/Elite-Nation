@@ -39,7 +39,7 @@ if(!$_SESSION['login_user']==""){
 		<footer>
 			<center>
 				<?php
-					$start = "2014";
+					$start = "2013";
 					$current = gmdate("Y");
 					$cy = "";
 					if ($current == $start) {
