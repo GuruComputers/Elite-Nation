@@ -52,7 +52,11 @@ if(!$_SESSION['login_user']==""){
 			</form>
 		</header>
 		<section>
-				
+				<h1>Welcome to Elite Nation</h1>
+				<h2>So what is ELite Nation?</h2>
+				<p>ELite Nation is an upcoming Hacking MMO created from the ground up. 
+				We were fed up of all the hacking games being the same, and all either promoting Pay-to-Win
+				or allowing players to be too powerful and in doing so, making the game unplayable for most players.</p>
 		</section>
 		<footer>
 			<center>
