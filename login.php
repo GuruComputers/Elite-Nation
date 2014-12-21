@@ -20,11 +20,11 @@ $password = mysql_real_escape_string($password);
 // Selecting Database
 $db = mysql_select_db("zadmin_elitenation", $connection);
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql_query("select * from login where password='$password' AND username='$username'", $connection);
+$query = mysql_query("select * from users where password='$password' AND username='$username'", $connection);
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
-$lastlogin = mysql_query("UPDATE login SET last_login=current_timestamp WHERE username='$username'", $connection);
+$lastlogin = mysql_query("UPDATE users SET last_login=current_timestamp WHERE username='$username'", $connection);
 header("location: profile.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";

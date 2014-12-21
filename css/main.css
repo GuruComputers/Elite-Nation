@@ -125,19 +125,37 @@ a, a:visited {
 /**********************
   PAGE: HOMEPAGE
 **********************/
-.css-typing
-{
-    width: 30em;
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00CC00 }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00CC00 }
+}
+
+body { font-family: Consolas, monospace; }
+
+.css-typing { 
+    font-size:150%;
+    width:16.3em;
     white-space:nowrap;
     overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
-}
-
-@keyframes type{
-    from { width: 0; }
-}
-
-@-webkit-keyframes type{
-    from { width: 0; }
+    border-right: .1em solid black;
+    
+    -webkit-animation: typing 5s steps(23, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 5s steps(23, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
 }

@@ -5,6 +5,7 @@
     	top: 20%;
     	left: 0;
 	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -37,6 +38,10 @@
 		padding-left: 10px;
 		float: left;
 	}
+
+	h1 {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -56,6 +61,11 @@
 		padding-left: 10px;
 		float: left;
 	}
+
+	h1 {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 421px) {
@@ -75,4 +85,9 @@
 		padding-left: 0px;
 		float: left;
 	}
+
+	h1 {
+		display: none;
+	}
+
 }
