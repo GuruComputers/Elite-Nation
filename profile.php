@@ -34,13 +34,13 @@ include('session.php');
 		<footer>
 			<center>
 				<?php
-					$start=2013;
-					$current=date("Y");
-					$cy="";
-					if ($current=$start) {
-						$cy=$start;
+					$start = "2014";
+					$current = gmdate("Y");
+					$cy = "";
+					if ($current == $start) {
+						$cy = $start;
 					}
-					if ($current>$start) {
+					if ($current > $start) {
 						$cy=$start."-".$current;
 					}
 					echo "<p>&copy;"." ".$cy." Guru Computers Ltd.</p>"."\n";
