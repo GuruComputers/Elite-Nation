@@ -26,14 +26,14 @@ if(!$_SESSION['login_user']==""){
 		<nav>
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
 			<div id="login">
-					<?php
-						if($_SESSION['login_user']==""){
-							include('guest.php');
-						} else {
-							include('user.php');
-						}
-					?>
-				</div>
+				<form action="" method="post">
+					<label>UserName :</label>
+					<input id="name" name="username" placeholder="username" type="text">
+					<label>Password :</label>
+					<input id="password" name="password" placeholder="**********" type="password">
+					<input name="submit" type="submit" value=" Login ">
+				</form>
+			</div>
 		</nav>
 		<section>
 				

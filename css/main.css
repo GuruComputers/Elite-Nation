@@ -29,8 +29,8 @@ body {
 	margin-left: -5%;
 }
 
-#login {
-	
+#login, #profile {
+	float:right;
 } 
 
 nav {
