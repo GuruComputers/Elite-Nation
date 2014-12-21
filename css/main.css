@@ -29,6 +29,7 @@ body {
 	height: auto;
 	margin-left: -5%;
 	clear: both;
+	display: block;
 }
 
 #login, #profile {
