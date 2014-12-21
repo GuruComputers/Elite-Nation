@@ -14,10 +14,8 @@
 	?>
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Indie+Flower|Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body>	
 	<div id="wrapper">
-
-
 		<nav>
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
 		</nav>
