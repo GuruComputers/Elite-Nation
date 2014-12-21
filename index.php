@@ -25,15 +25,13 @@ if(!$_SESSION['login_user']==""){
 	<div id="wrapper">
 		<nav>
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
-			<div id="login">
-				<form action="" method="post">
+				<form id="login" action="" method="post">
 					<label>UserName :</label>
 					<input id="name" name="username" placeholder="username" type="text">
 					<label>Password :</label>
 					<input id="password" name="password" placeholder="**********" type="password">
 					<input name="submit" type="submit" value=" Login ">
 				</form>
-			</div>
 		</nav>
 		<section>
 				
