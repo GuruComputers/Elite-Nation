@@ -26,8 +26,8 @@
 		<footer>
 			<center>
 				<?php
-					$start=2014;
-					$current=date("Y");
+					$start="2013";
+					$current=gmdate("Y");
 					$cy="";
 					if ($current=$start) {
 						$cy=$start;
