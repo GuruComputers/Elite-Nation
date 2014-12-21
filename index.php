@@ -18,6 +18,7 @@ if(!$_SESSION['login_user']==""){
 		if (date('m') == '12') {
  			echo '<link rel="stylesheet" href="'.$root.'css/snow.css">'."\n";
 		}
+		echo '<link rel="stylesheet" href="'.$root.'css/responsive.css">'."\n";
 	?>
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Indie+Flower|Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
