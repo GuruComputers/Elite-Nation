@@ -9,15 +9,24 @@ if(!$_SESSION['login_user']==""){
 <head>
 	<meta charset="utf-8">
 	<title>Elite Nation</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 	<?php
 		$page = "home";
 		$root = "./";
+		$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+		$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+		$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+		$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+		$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+		$fire = strpos ($_SERVER['HTTP_USER_AGENT'],"Mobile");
 		echo '<link rel="stylesheet" href="'.$root.'css/normalize.css">'."\n";
 		echo '<link rel="stylesheet" href="'.$root.'css/main.css">'."\n";
-		if (date('m') == '12') {
- 			echo '<link rel="stylesheet" href="'.$root.'css/snow.css">'."\n";
-		}
+		if ($iphone || $android || $palmpre || $ipod || $berry || $fire == false) 
+			{
+				if (date('m') == '12') {
+	 			echo '<link rel="stylesheet" href="'.$root.'css/snow.css">'."\n";
+				}
+			}
 		echo '<link rel="stylesheet" href="'.$root.'css/responsive.css">'."\n";
 	?>
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Indie+Flower|Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
