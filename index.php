@@ -51,7 +51,7 @@ if(!$_SESSION['login_user']==""){
 					}
 					echo "&copy"." ".$cy." Guru Computers Ltd"."\n";
 					?>
-					<img src="./img/facebook.png" alt="Facebook Logo"><img src="./img/twitter.png" alt="Twitter Logo">		
+					<img class="social-media" src="./img/facebook.png" alt="Facebook Logo"><img class="social-media" src="./img/twitter.png" alt="Twitter Logo">		
 			</center>
 		</footer>
 	</div>
