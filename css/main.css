@@ -24,6 +24,7 @@ body {
 .logo {
 	width: 250px;
 	height: 155px;
+	margin-left: -50px;
 }
 
 nav {
