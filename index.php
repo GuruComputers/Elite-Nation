@@ -1,5 +1,8 @@
 <?php
 include('login.php'); // Includes Login Script
+if(!$_SESSION['login_user']==""){
+	header('Location: profile.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
