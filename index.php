@@ -16,13 +16,14 @@
 </head>
 <body>
 	<div id="wrapper">
+
+
 		<nav>
 			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
 		</nav>
 		<section>
 
 		</section>
-
 		<footer>
 			<center>
 				<?php
@@ -39,7 +40,6 @@
 					?>
 			</center>
 		</footer>
-
 	</div>
 </body>
 </html>
