@@ -29,6 +29,7 @@ include('login.php'); // Includes Login Script
 						} else {
 							include('user.php');
 						}
+					?>
 				</div>
 		</nav>
 		<section>
