@@ -30,9 +30,9 @@ if(!$_SESSION['login_user']==""){
 <body>	
 	<div id="wrapper">
 		<header>
-		<div id="mobile-logo">
-			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
-		</div>
+			<div id="mobile-logo">
+				<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
+			</div>
 			<br class="anti-oops" />
 			<form id="login" action="" method="post">
 				<div id="mobile-user">
