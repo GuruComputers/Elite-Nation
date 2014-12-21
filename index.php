@@ -17,14 +17,9 @@
 <body>
 	<div id="wrapper">
 		<nav>
-			<h3>Elite Nation</h3>
+			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
 		</nav>
 		<section>
-
-		<div id="header">
-			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
-		</div>
-		<div id="content">
 
 		</section>
 
