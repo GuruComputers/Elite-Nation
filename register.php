@@ -101,9 +101,10 @@ $m_count = mysql_num_rows($query);
 if($m_count >= "1"){
 echo 'This name has already been used.!';
 }else{
+$hash = md5($_POST['Email']); // Generate 32 character hash from email address
 $password = md5($_POST['Password']); // this is a md5 hash. its encrypt your password so it isnt easily hackable
 // The id is blank because it is an auto_increment  which mean it will auto add a value to every user and the are all different. this is mainly so we dont have dupilcate.
-$sql = "INSERT INTO users SET id = '', username = '".$_POST['Username']."' , password= '$password', mail= '".$_POST["Email"]."'";
+$sql = "INSERT INTO users SET id = '', username = '".$_POST['Username']."' , password= '$password', mail= '".$_POST["Email"]."', hash= '$hash'";
 $res = mysql_query($sql);
 $to = $_POST['Email'];
     $from = "no-reply@gurucomputers.co.uk";
@@ -116,9 +117,12 @@ $to = $_POST['Email'];
 Your Username: ".$_POST['Username']."<p>
  
 Your Password: ".$_POST['Password']."<p>
- 
+
+Please click this link to activate your account:
+http://www.gurucomputers.co.uk/game/verify.php?hash=$hash
+
       <p>
-      <font size=3> You recived this mail because someone used this mail to sign up to a game</font>
+      <font size=3> You received this mail because someone used this email address to sign up to Elite Nation</font>
   </body>
 </html>";
     
@@ -153,9 +157,10 @@ echo "".$_POST['Username'].", Welcome to the game.";
       <input type="text" name="Email" id="Email">
     </p>
     <p>
+      I Agree to the Terms & Conditions
       <input type="checkbox" name="Agree" id="Agree">
-      <br>
-<input type="submit" name="Register" id="Register" value="Register">
+      <br /><br />
+      <input type="submit" name="Register" id="Register" value="Register">
     </p>
   </center>
 </form>
