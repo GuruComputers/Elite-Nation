@@ -26,7 +26,7 @@ require("includes/variables.php");
 <body>	
 	<div id="wrapper">
 		<nav>
-			<img class="logo" src="img/logo.png" alt="Elite Nation Logo" />
+			<a href="index.php"><img class="logo" src="img/logo.png" alt="Elite Nation Logo" /></a>
 			<div id="profile">
 				<b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
 				<b id="logout"><a href="logout.php">Log Out</a></b>
@@ -35,6 +35,14 @@ require("includes/variables.php");
 		<section>
 			<h3>Money:</h3><?php echo $money; ?>
 			<h3>Experience Points:</h3><?php echo $exp; ?>
+			<h3>Your IP:</h3>
+			<?php 
+			if($genIP != ""){
+				echo $genIP;
+			}else{
+				echo $gameip;
+			} 
+			?>
 		</section>
 		<?php
 			include "footer.php";

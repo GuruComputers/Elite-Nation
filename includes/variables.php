@@ -15,7 +15,7 @@ $sql = "SELECT * FROM users WHERE id='".mysql_real_escape_string($_SESSION['user
 $query = mysql_query($sql) or die(mysql_error());
 $row = mysql_fetch_object($query);
 $id = htmlspecialchars($row->id);
-$userip = htmlspecialchars($row->userip);
+$gameip = htmlspecialchars($row->gameip);
 $name = htmlspecialchars($row->name);
 $password = htmlspecialchars($row->password);
 $mail = htmlspecialchars($row->mail);
@@ -23,5 +23,11 @@ $money = htmlspecialchars($row->money);
 $exp = htmlspecialchars($row->exp);
 $rank = htmlspecialchars($row->rank);
 $points = htmlspecialchars($row->points);
+
+if(($row->gameip) == ""){
+	$genIP = "".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255);
+	$sql = "UPDATE users SET gameip='".$genIP."' WHERE id='".($_SESSION['user_id'])."'";
+	mysql_query($sql);
+}
 
 ?>
