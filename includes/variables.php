@@ -45,4 +45,10 @@ $hdo_array = explode("-", $hdo);
 $admin_ip_array = explode("-", $admins_ip);
 $mods_ip_array = explode("-", $mods_ip);
 
+$internet_name = array ("Dial Up", "Dial-Up", "Speedbridge", "Super Speedbridge", "Coppercore", "Gold Coppercore", "Multicore Gold", "Footce", "Light Pipe", "Quantum Beams");
+
+$internet_speed = array ("14.4Kbps", "56Kbps","1Mbps","5Mbps","10Mbps","20Mbps","50Mbps","100Mbps","250Mbps","1Tbps");
+
+$internet_speedratio = array ("");
+
 ?>
