@@ -51,4 +51,12 @@ $internet_speed = array ("14.4Kbps", "56Kbps","1Mbps","5Mbps","10Mbps","20Mbps",
 
 $internet_speedratio = array ("");
 
+$CPU_name = array ("Pineapple One", "Carrot 10", "Stick 100", "BN£ 1337", "Daisy", "Silicon Chip", "Uber Chip", "Terrachip", "Scotty", "Shofast");
+
+$CPU_speed = array ("1Hz", "10Hz", "100Hz", "1GHz", "10GHz", "100GHz", "1THz", "10THz", "100THz", "1LHz");
+
+$RAM_capacity = array("1 Bit", "1 Byte", "1 Word", "1 Nibble", "1MB", "100MB", "1GB", "100GB", "1TB", "1EB");
+
+$HDD_capacity = array("100MB", "500MB", "1GB", "10GB", "100GB", "1TB", "10TB", "100TB", "1DC", "1QC");
+
 ?>
