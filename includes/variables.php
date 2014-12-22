@@ -30,4 +30,19 @@ if(($row->gameip) == ""){
 	mysql_query($sql);
 }
 
+$sql = "SELECT * FROM sitestats WHERE id='1'";
+$query = mysql_query($sql) or die(mysql_error());
+$row = mysql_fetch_object($query);
+$admins = htmlspecialchars($row->admins);
+$mods = htmlspecialchars($row->mods);
+$hdo = htmlspecialchars($row->hdo);
+$admins_ip = htmlspecialchars($row->admins_ip);
+$mods_ip = htmlspecialchars($row->mods_ip);
+
+$admin_array = explode("-", $admins);
+$mods_array = explode("-", $mods);
+$hdo_array = explode("-", $hdo);
+$admin_ip_array = explode("-", $admins_ip);
+$mods_ip_array = explode("-", $mods_ip);
+
 ?>

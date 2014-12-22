@@ -101,7 +101,7 @@ $m_count2 = mysql_num_rows($query2);
 if($m_count >= "1"){
 echo 'This name has already been used.!';
 }elseif($m_count2 >= "1"){
-  echo 'An account has already been created from your IP. If you are using a shared IP, <a href="mailto:support@gurucomputers.co.uk">Email Us</a>';
+  echo 'An account has already been created from your IP. If you are using a shared IP, <a href="mailto:support@elitenation.co.uk">Email Us</a>';
 }else{
 $hash = md5($_POST['Email']); // Generate 32 character hash from email address
 $password = md5($_POST['Password']); // this is a md5 hash. its encrypt your password so it isnt easily hackable
@@ -109,7 +109,7 @@ $password = md5($_POST['Password']); // this is a md5 hash. its encrypt your pas
 $sql = "INSERT INTO users SET id = '', username = '".$_POST['Username']."' , password= '$password', mail= '".$_POST["Email"]."', hash= '$hash', signup_ip= '".$_SERVER['REMOTE_ADDR']."'";
 $res = mysql_query($sql);
 $to = $_POST['Email'];
-    $from = "no-reply@gurucomputers.co.uk";
+    $from = "no-reply@elitenation.co.uk";
     $subject = "Registration - Your Registration Details";
     $message = "<html>
    <body background=\"#4B4B4B\">
@@ -128,7 +128,7 @@ http://www.gurucomputers.co.uk/game/verify.php?hash=$hash
   </body>
 </html>";
     
-    $headers  = "From: Game Registration Details <no-reply@gurucomputers.co.uk>\r\n";
+    $headers  = "From: Game Registration Details <no-reply@elitenation.co.uk>\r\n";
     $headers .= "Content-type: text/html\r\n";
  
     mail($to, $subject, $message, $headers);            
