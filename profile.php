@@ -43,6 +43,8 @@ require("includes/variables.php");
 				echo $gameip;
 			} 
 			?>
+			<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><?php include('includes/viewonline.php'); ?></marquee>
+			<?php echo "<p><center>Total Players Online: ".$count."</center</p>"; ?>
 		</section>
 		<?php
 			include "footer.php";

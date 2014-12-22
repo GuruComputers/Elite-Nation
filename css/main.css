@@ -76,6 +76,11 @@ footer {
 	height: auto;
 }
 
+.marquee {
+	-webkit-marquee: auto medium infinite scroll normal;   
+	overflow-x: -webkit-marquee; 
+}
+
 /**********************
      FONT STYLES 
 **********************/
