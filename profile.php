@@ -1,5 +1,6 @@
 <?php
 include('session.php');
+require("includes/variables.php");
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +33,8 @@ include('session.php');
 			</div>
 		</nav>
 		<section>
-
+			<h3>Money:</h3><?php echo $money; ?>
+			<h3>Experience Points:</h3><?php echo $exp; ?>
 		</section>
 		<?php
 			include "footer.php";
