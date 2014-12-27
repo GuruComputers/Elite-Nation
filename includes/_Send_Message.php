@@ -3,64 +3,74 @@ $page_url = explode(".", $_SERVER['REQUEST_URI']);
 $_SERVER['REQUEST_URI'] = $page_url[0].".php";
 
 if($_SERVER['REQUEST_URI'] == "/_Send_Message.php"){
-	exit();
+exit();
 }
 
 if(isset($_POST['Send'])){
-	$_POST['sendto'] = str_replace(" ", '', $_POST['sendto']);
-	$m_check = str_replace(' ', '', $_POST['meesage']);
 
-	if((empty($m_check)) or (empty($_POST['sento']))){
-		echo "You didn't fill out all the required fields!";
+$_POST['sendto'] = str_replace(' ', '', $_POST['sendto']);
+$m_check = str_replace(' ', '', $_POST['message']);
+
+	if((empty($m_check)) or (empty($_POST['sendto']))){  // a valididation to makes sure that all the ields are filled
+		echo "You left one or more fields open.";
+	}else {
+
+$multi_messages = explode("-", $_POST['sendto']); // Allows a user to send a mass message to up to 5 people at once. Useful when a member wants to send a message to a lot of friends
+$multi_messages = array_unique($multi_messages);
+
+		if(count($multi_messages) > 5){
+			echo "5 is the maximum amount of people you are allowed to send to at once.";
+		}else{ 
+		
+
+// checks the name of every user entered in a for loop
+for ($i = 0; $i < count($multi_messages); $i++) {
+
+$query = "SELECT username FROM users WHERE username='".mysql_real_escape_string($multi_messages[$i])."'"; 
+$result = mysql_query($query) or die(mysql_error());
+$row = mysql_fetch_array($result);
+
+// makes a user doent send a message to themself
+	if($row['username'] == $name){
+		echo "<br />Its not allowed to send a message to yourself.";
 	}else{
+	
+			if(!empty($row['username'])){ 
+$sql = "INSERT INTO pm SET id = '', sendto = '" .mysql_real_escape_string($row['username']). "', message = '" .mysql_real_escape_string($_POST['message']). "', sendby = '" .mysql_real_escape_string($name). "'";
+$res = mysql_query($sql);
 
-		$multi_messages = explode("-", $_POST['sendto']);
-		$multi_messages = array_unique($multi_messages);
+				if ($res){
+	
+	$send_to = "<a href=\"View_Profile.php?name=".$row['name']."\" onFocus=\"if(this.blur)this.blur()\">".$row['name']."</a>,";
+	echo "<br />Your message to ".$send_to." has been sent."; // convermation to say that the message to the user was sent
 
-		if(count($multi_messages) > 5) {
-			echo "In order to prevent spam, you can only send to 5 people at a time.";
-		}else{
-			for ($i = 0; $i < count($multi-messages); $i++) {
-				$query = "SELECT username FROM users WHERE username='".mysql_real_escape_string($mult_messages[$i])."'";
-				$result = mysql_query($query) or die(mysql_error());
-				$row = mysql_fetch_array($result);
+$result = mysql_query("UPDATE users SET newmail='0' WHERE username='" .mysql_real_escape_string($row['name']). "'") 
+or die(mysql_error());
 
-				// Stop players talking to themselves
-				if($row['username'] == $name){
-					$sql2 = "SELECT username FROM users WHERE DATE_SUB(NOW(), INTERVAL 5 MINUTE) <= lastactive ORDER BY id ASC"; // Searhes the database for every player showing as Last Active within the last 5 Minutes
-					$query = mysql_query($sql) or die(mysql_error());
-					$count = mysql_num_rows($query);
-					$others = $count-1
-					echo "There are ".$others." other players online right now, do you really need to talk to yourself?";
-				}else{
-					if(!empty($row['username'])){
-						$sql = "INSERT INTO pm SET id= '', sendto = '" .mysql_real_escape_string($row['username']). "',senby = '" .mysql_real_escape_string($name). "'";
-						$res = mysql_query($sql);
+$result = mysql_query("UPDATE users SET messages=messages+'1' WHERE id='" .mysql_real_escape_string($_SESSION['user_id']). "'") 
+or die(mysql_error());
 
-						if ($res) {
-							$send_to = "<a href=\"View_Profile.php?name=".$row['username']."\" onFocus=\"if(this.blur)this.blur()\">".$row['username']."</a>,";
-							echo "<br />Your message to ".$send_to." has been sent."; // Sent Confirmation
+// helpdesk.
 
-							$result = mysql_query("UPDATE users set newmail='0' WHERE username='" .mysql_real_escape_string($row['username']). "'") or die(mysql_error());
+if($_GET['action'] == "helpdesk" and (in_array($name, $admin_array) or in_array($name, $manager_array) or in_array($name, $hdo_array))){
 
-							$result = mysql_query("UPDATE users SET messages=messages+'1' WHERE id='" .mysql_real_escape_string($_SESSION['user_id']). "'") or die(mysql_error());
+$result = mysql_query("UPDATE login SET help_desk='' WHERE username='".mysql_real_escape_string($_GET['name'])."'")
+or die(mysql_error());
 
-							// If sent to Help Desk
-							if($_GET['action'] == "helpdesk" and (in_array($name, $admin_array) or in_array($name, $manager_array) or in_array($name, $hdo_array))){
+}
 
-								$result = mysql_query("UPDATE login SET help_desk='' WHERE name='".mysql_real_escape_string($_GET['name'])."'") or die(mysql_error());
-
-							}else{
-							//if something went wrong and the message could not be sent
-								echo "error! Your message could not be sent.";
-							}
-						}else{
-						// if one of the users enteren doens tplay this game
-							echo "<br />".$multi_messages[$i]." doesn't play This game .";
-						}
-					}
-				}
+}else{
+	//if something went wrong and the message could not be sent
+    echo "error! Your message could not be sent.";
+}
+			}else{
+				// if one of the users enteren doens tplay this game
+echo "<br />".$multi_messages[$i]." doesn't play This game .";
 			}
 		}
 	}
+}
+
+
+}}
 ?>
