@@ -1,6 +1,6 @@
 <div id="gamebar">
-	<td width="150" align="right" valign="top" bgcolor="">
-		<table width="135" border="0" align="right" cellpadding="0" cellspacing="2" class="table">
+	<td width="100%" align="right" valign="top" bgcolor="">
+		<table width="100%" border="0" align="right" cellpadding="0" cellspacing="2" class="table">
 			<tr>
 				<td class="header">Running Processes</td>
 			</tr>
@@ -11,7 +11,7 @@
 				<td class="header">Player Information</td>
 			</tr>
 			<tr>
-				<td height="19" class="header">Money</td>
+				<td height="19" class="subheader">Money</td>
 			</tr>
 			<tr>
 				<td height="27" class="cell"><?php echo "&#934;".number_format($money)."";?></td>
@@ -32,25 +32,25 @@
 				<td class="header">Terminal Information</td>
 			</tr>
 			<tr>
-				<td height="19" class="header">CPU</td>
+				<td height="19" class="subheader">CPU</td>
 			</tr>
 			<tr>
 				<td height="27" class="cell"><?php echo "Coming Soon";?></td>
 			</tr>
 			<tr>
-				<td height="19" class="header">RAM</td>
+				<td height="19" class="subheader">RAM</td>
 			</tr>
 			<tr>
 				<td height="27" class="cell"><?php echo "Coming Soon";?></td>
 			</tr>	
 			<tr>
-				<td height="19" class="header">HDD</td>
+				<td height="19" class="subheader">HDD</td>
 			</tr>
 			<tr>
 				<td height="27" class="cell"><?php echo "Coming Soon";?></td>
 			</tr>
 			<tr>
-				<td height="19" class="header">Internet</td>
+				<td height="19" class="subheader">Internet</td>
 			</tr>
 			<tr>
 				<td height="27" class="cell"><?php echo "Coming Soon";?></td>

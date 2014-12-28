@@ -14,13 +14,13 @@ body {
 #wrapper {
 	background-color: rgba(0, 0, 0, 0.8);
 	min-height: 100%;
+	float: left;
 	width:75%;
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
 	padding-top: 5px;
 	color: #00CC00;
 	position: relative;
+	margin-right:-1px;
 }
 
 .logo {
@@ -132,10 +132,20 @@ a, a:visited {
 **********************/
 #sidebar {
 	float: left;
-	position: relative;
+	width: 25%;
 	margin-top: 200px;
 	margin-left: 5%;
 	display: block;
+	position: relative;
+	margin-right:-1px;
+}
+
+#gamebar {
+	float: left;
+	position: relative;
+	margin-top: 200px;
+	display: block;
+	width: 25%;
 }
 
 /**********************
@@ -157,6 +167,22 @@ a, a:visited {
 	padding-left: 2px;
 	color: #00CC00;
 	background: #009999;
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	border-bottom:2px solid;
+	border-color: #009E00;
+}
+
+/**********************
+   PART: GAME BAR
+**********************/
+.subheader {
+	padding: 0px;
+	padding-left: 2px;
+	color: #00CC00;
+	background: #007777;
 	font-family: verdana;
 	font-size: 14px;
 	line-height: 18px;

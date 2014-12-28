@@ -1,7 +1,5 @@
 <?php
 include('session.php');
-include('includes/sidemenu.php');
-include('includes/gamebar.php');
 require("includes/variables.php");
 ?>
 
@@ -25,7 +23,10 @@ require("includes/variables.php");
 	?>
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Indie+Flower|Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
-<body>	
+<body>
+	<?php 
+		include('includes/sidemenu.php');
+	?>
 	<div id="wrapper">
 		<nav>
 			<a href="index.php"><img class="logo" src="img/logo.png" alt="Elite Nation Logo" /></a>
@@ -52,5 +53,8 @@ require("includes/variables.php");
 			include "footer.php";
 		?>
 	</div>
+	<?php
+		include('includes/gamebar.php');
+	?>
 </body>
 </html>
