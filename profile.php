@@ -2,6 +2,7 @@
 include('session.php');
 include('includes/sidemenu.php');
 include('includes/gamebar.php');
+include('includes/threatlevel.php');
 require("includes/variables.php");
 ?>
 
