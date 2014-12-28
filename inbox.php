@@ -62,7 +62,7 @@ $max = $amount;
 if( $page > 1){
 	
 $previouspage = $page - 1;
-echo "<a href=\"Inbox.php?page=".$previouspage."\" onFocus=\"if(this.blur)this.blur()\">Previous.</a>";	
+echo "<a href=\"inbox.php?page=".$previouspage."\" onFocus=\"if(this.blur)this.blur()\">Previous.</a>";	
 }
 
 
@@ -90,7 +90,7 @@ if(($totalmail >= "1") and (!isset($_POST['Clean']))){ ?>
 	
 if($page < $numofpages){ 
     $pagenext = ($page + 1); 
-	echo "<a href=\"Inbox.php?page=".$pagenext."\" onFocus=\"if(this.blur)this.blur()\" colour='#000000'>Next</a>";	
+	echo "<a href=\"inbox.php?page=".$pagenext."\" onFocus=\"if(this.blur)this.blur()\" colour='#000000'>Next</a>";	
 }
 
 	?></span></td>
@@ -141,7 +141,7 @@ echo $row['message'];
 		echo "<a href=\"Send_Message.php?name=". $row['sendby'] ."&reply=". $row['id'] ."\" onFocus=\"if(this.blur)this.blur()\">Reply.</a>";
 	?></td>
         <td width="50" align="center" ><?php 
-		echo "<a href=\"Inbox.php?delete=". $row['id'] ."\" onFocus=\"if(this.blur)this.blur()\">Delete.</a>";
+		echo "<a href=\"inbox.php?delete=". $row['id'] ."\" onFocus=\"if(this.blur)this.blur()\">Delete.</a>";
 		 ?></td>
         <td width="50" align="right" ><?php 
 		echo "".$row['time']."";
