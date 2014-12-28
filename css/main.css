@@ -81,6 +81,11 @@ footer {
 	overflow-x: -webkit-marquee; 
 }
 
+#players {
+	border-top: 2px;
+	border-bottom: 2px;
+}
+
 /**********************
      FONT STYLES 
 **********************/
