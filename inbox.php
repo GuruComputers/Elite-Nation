@@ -1,6 +1,7 @@
 <?php
 include('session.php');
 require("includes/variables.php");
+error_reporting(E_ALL);
 ?>
 
 <!DOCTYPE html>
