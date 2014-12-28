@@ -95,7 +95,7 @@ require("includes/variables.php");
 			</table>
 
 			<?php 
-				require("/includes/inbox.php");
+				require("includes/inbox.php");
 
 				$presult = mysql_query("SELECT * FROM pm WHERE sento='".mysql_real_escape_string($name)."' and del='1' ORDER BY id DESC LIMIT $min,$amount") or die(mysql_error());
 
