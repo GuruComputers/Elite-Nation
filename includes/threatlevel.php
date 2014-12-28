@@ -1,3 +1,3 @@
 <div id="threat_level">
-	<img src="../img/threat_level" alt="Threat Level">
+	<img src="../img/threat_level.png" alt="Threat Level">
 </div>
