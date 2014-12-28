@@ -12,7 +12,7 @@
 				$cy=$start."-".$current;
 			}
 		?>
-			<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><?php include('includes/viewonline.php'); ?></marquee>
+			<marquee id="players" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><?php include('includes/viewonline.php'); ?></marquee>
 		<?php	
 			echo "&copy"." ".$cy." <a href=\"http://www.gurucomputers.co.uk\">Guru Computers Ltd</a>"."\n";
 		?>
