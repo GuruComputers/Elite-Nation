@@ -149,6 +149,18 @@ a, a:visited {
 	width: 12.5%;
 }
 
+#threat_level {
+	float: left;
+	width: 7.5%;
+	height: auto;
+	display: block;
+}
+
+#threat_level img{
+	width: 100%;
+	height: auto;
+}
+
 /**********************
    PART: SIDE MENU
 **********************/
