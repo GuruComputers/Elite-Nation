@@ -11,6 +11,9 @@
 			if ($current > $start) {
 				$cy=$start."-".$current;
 			}
+		?>
+			<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><?php include('includes/viewonline.php'); ?></marquee>
+		<?php	
 			echo "&copy"." ".$cy." <a href=\"http://www.gurucomputers.co.uk\">Guru Computers Ltd</a>"."\n";
 		?>
 		<a href="https://www.facebook.com/elitenationgame"><img class="social-media" src="./img/facebook.png" alt="Facebook Logo"></a>
