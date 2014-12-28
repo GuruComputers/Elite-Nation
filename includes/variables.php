@@ -26,8 +26,15 @@ $points = htmlspecialchars($row->points);
 
 if(($row->gameip) == ""){
 	$genIP = "".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255);
-	$sql = "UPDATE users SET gameip='".$genIP."' WHERE id='".($_SESSION['user_id'])."'";
-	mysql_query($sql);
+	$checkip = "SELECT * from users WHERE gameip='".$genIP."'";
+	$checkipres = mysql_query($checkip) or die(mysql_error());
+	$ip_check = mysql_num_rows($checkipres);
+	if($ip_count >= "1"){
+		$genIP = "".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255);
+	}else {
+		$sql = "UPDATE users SET gameip='".$genIP."' WHERE id='".($_SESSION['user_id'])."'";
+		mysql_query($sql);
+	}
 }
 
 $sql = "SELECT * FROM sitestats WHERE id='1'";

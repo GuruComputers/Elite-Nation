@@ -138,6 +138,14 @@ a, a:visited {
 	display: block;
 }
 
+#gamebar {
+	float: right;
+	position: relative;
+	margin-top: 200px;
+	margin-right: 0.5%;
+	display: block;
+}
+
 /**********************
    PART: SIDE MENU
 **********************/
@@ -157,6 +165,22 @@ a, a:visited {
 	padding-left: 2px;
 	color: #00CC00;
 	background: #009999;
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	border-bottom:2px solid;
+	border-color: #009E00;
+}
+
+/**********************
+   PART: GAME BAR
+**********************/
+.subheader {
+	padding: 0px;
+	padding-left: 2px;
+	color: #00CC00;
+	background: #007777;
 	font-family: verdana;
 	font-size: 14px;
 	line-height: 18px;

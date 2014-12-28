@@ -20,7 +20,7 @@ $password = mysql_real_escape_string($password);
 // Selecting Database
 $db = mysql_select_db("zadmin_elitenation", $connection);
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql_query("select * from users where password='$password' AND username='$username' AND active='1'", $connection);
+$query = mysql_query("select * from users where password='$password' AND username='$username' AND active='1' AND sitestate='1'", $connection);
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
