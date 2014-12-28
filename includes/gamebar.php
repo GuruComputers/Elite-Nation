@@ -1,6 +1,6 @@
 <div id="gamebar">
-	<td width="250" align="right" valign="top" bgcolor="">
-		<table width="220" border="0" align="right" cellpadding="0" cellspacing="2" class="table">
+	<td width="100%" align="right" valign="top" bgcolor="">
+		<table width="90%" border="0" align="right" cellpadding="0" cellspacing="2" class="table">
 			<tr>
 				<td class="header">Running Processes</td>
 			</tr>
