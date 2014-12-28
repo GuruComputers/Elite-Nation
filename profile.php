@@ -1,5 +1,6 @@
 <?php
 include('session.php');
+include('includes/sidemenu.php');
 require("includes/variables.php");
 ?>
 
