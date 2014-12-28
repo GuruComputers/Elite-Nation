@@ -128,6 +128,44 @@ a, a:visited {
 }
 
 /**********************
+  PAGE: GAMEHOMEPAGE
+**********************/
+#sidebar {
+	float: left;
+	position: relative;
+	margin-top: 200px;
+	margin-left: 5%;
+	display: block;
+}
+
+/**********************
+   PART: SIDE MENU
+**********************/
+.table {
+	border: #007C00 1px solid;
+	background-color: #000000;
+}
+
+.cell {
+	color: #00CC00;
+	padding: 3px;
+	background-color: #000000;
+}
+
+.header {
+	padding: 0px;
+	padding-left: 2px;
+	color: #00CC00;
+	background: #009999;
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	border-bottom:2px solid;
+	border-color: #009E00;
+}
+
+/**********************
   PAGE: HOMEPAGE
 **********************/
 @-webkit-keyframes typing {
@@ -168,26 +206,3 @@ body { font-family: Consolas, monospace; }
 /**********************
   PAGE: INBOX
 **********************/
-.table {
-	border: #007C00 1px solid;
-	background-color: #009E00;
-}
-
-.cell {
-	color: #00CC00;
-	padding: 3px;
-	background-color: #55D955;
-}
-
-.header {
-	padding: 0px;
-	padding-left: 2px;
-	color: #00CC00;
-	background: #2FCF2F;
-	font-family: verdana;
-	font-size: 10px;
-	line-height: 18px;
-	text-align: left;
-	border-bottom:2px solid;
-	border-color: #009E00;
-}

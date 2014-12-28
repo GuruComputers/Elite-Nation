@@ -1,6 +1,7 @@
 <?php
 include('session.php');
 include('includes/sidemenu.php');
+include('includes/gamebar.php');
 require("includes/variables.php");
 ?>
 
