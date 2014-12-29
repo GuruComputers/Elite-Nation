@@ -18,4 +18,16 @@ function send_mail($from,$to,$subject,$body)
     mail($to,$subject,$body,$headers);
 
 }
+
+function randomPassword() { // Generate NPC Password
+	$alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	$npcPass = array();
+	$alphaLength = strlen($alphabet) - 1;
+	for ($i = 0; $i < 8, $i++) {
+		$n = rand(0, $alphaLength);
+		$npcPass[] = $alphabet[$n];
+	}
+
+	return implode($npcPass);
+}
 ?>
