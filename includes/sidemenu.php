@@ -12,7 +12,21 @@
 							<a href="gamemanual.php">Game Manual</a><br />
 							<a href="Find_Player.php">Find a Player</a><br />
 							<a href="clans.php">Clans</a><br />
-							<a href="../logout.php">Logout</a><br />
+							<a href="logout.php">Logout</a><br />
+						</td>
+					</tr>
+
+					<tr> <!-- Virtual Computer Links -->
+						<td height="23" class="header">My Terminal</td>
+					</tr>
+					<tr>
+						<td valign="top" class="cell">
+							<a href="profile.php">Hardware</a><br />
+							<a href="vt/processes.php">Processes</a><br />
+							<a href="vt/logs.php">Local Logs</a><br />
+							<a href="vt/files.php">Files</a><br />
+							<a href="vt/internet.php">Internet</a><br />
+							<a href="vt/slaves.php">My Slaves</a><br />
 						</td>
 					</tr>
 
@@ -22,8 +36,8 @@
 					<tr>
 						<td valign="top" class="cell">
 							<a href="http://www.hitech4all.co.uk/forum" target="_blank">Forum</a><br />
-							<a href="../inbox.php">Inbox (<?php include('messagecount.php'); ?>)</a><br />
-							<a href="../Send_Message.php">Send a Message</a><br />
+							<a href="inbox.php">Inbox (<?php include('messagecount.php'); ?>)</a><br />
+							<a href="Send_Message.php">Send a Message</a><br />
 						</td>
 					</tr>
 

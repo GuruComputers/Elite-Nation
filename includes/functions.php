@@ -19,15 +19,15 @@ function send_mail($from,$to,$subject,$body)
 
 }
 
-function randomPassword() { // Generate NPC Password
-	$alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	$npcPass = array();
-	$alphaLength = strlen($alphabet) - 1;
-	for ($i = 0; $i < 8, $i++) {
-		$n = rand(0, $alphaLength);
-		$npcPass[] = $alphabet[$n];
-	}
+function randomPassword() { 
+    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ";
+    $npcPass = array();
+    $alphaLength = strlen($alphabet) - 1;
+    for ($i = 0; $i < 8; $i++) {
+        $n = rand(0, $alphaLength);
+        $npcPass[] = $alphabet[$n];
+    }
 
-	return implode($npcPass);
+    return implode($npcPass);
 }
 ?>
