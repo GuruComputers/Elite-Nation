@@ -26,7 +26,13 @@
 				<td height="19" class="subheader">Hacker Points</td>
 			</tr>
 			<tr>
-				<td height="19" class="cell"><?php echo $points; ?></td>
+				<td height="19" class="cell"><?php echo $exp; ?></td>
+			</tr>
+			<tr>
+				<td height="19" class="subheader">Local IP</td>
+			</tr>
+			<tr>
+				<td height="19" class="cell"><?php echo $gameip; ?></td>
 			</tr>
 			<tr>
 				<td class="header">Terminal Information</td>
