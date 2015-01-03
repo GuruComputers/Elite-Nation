@@ -1,10 +1,12 @@
 <?php
-include('../session.php');
-include('../includes/head.php');
-include('../includes/threatlevel.php');
-include('../includes/sidemenu.php');
-include('../includes/gamebar.php');
-require("../includes/variables.php");
+	define('ROOT_PATH', $_SERVER["DOCUMENT_ROOT"]);
+	define('INCLUDES_PATH', ROOT_PATH.'/includes/');
+	include ROOT_PATH . 'session.php';
+	include INCLUDES_PATH . 'head.php';
+	include INCLUDES_PATH . 'threatlevel.php';
+//	include INCLUDES_PATH . 'sidemenu.php';
+	include INCLUDES_PATH . 'gamebar.php';
+//	require INCLUDES_PATH . 'variables.php';
 ?>
 <body>
 	<div id="wrapper">

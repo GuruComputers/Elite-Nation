@@ -1,5 +1,4 @@
 <?php
-include('session.php');
 require("variables.php");
 
 $nsql = "SELECT * FROM pm WHERE sendto='".mysql_real_escape_string($name)."' and del='1'";            

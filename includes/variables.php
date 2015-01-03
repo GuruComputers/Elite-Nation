@@ -1,6 +1,6 @@
 <?php
-include_once("db_config.php");
-include_once("functions.php");
+include("db_config.php");
+include("functions.php");
 
 if(isset($_SESSION['user_id'])) {
  // Login OK, update last active
