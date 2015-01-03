@@ -1,32 +1,10 @@
 <?php
-include('login.php'); // Includes Login Script
-if(!$_SESSION['login_user']==""){
-	header('Location: profile.php');
-}
+	include('login.php'); // Includes Login Script
+	if(!$_SESSION['login_user']==""){
+		header('Location: profile.php');
+	}
+	include 'includes/head.php';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Elite Nation</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-	<?php
-		$fire = strpos ($_SERVER['HTTP_USER_AGENT'],"Mobile");
-		if ($fire == true) 
-			{
-				echo "<script>window.location='fire.php'</script>";
-			}
-		$page = "home";
-		$root = "./";
-		echo '<link rel="stylesheet" href="'.$root.'css/normalize.css">'."\n";
-		echo '<link rel="stylesheet" href="'.$root.'css/main.css">'."\n";
-		if (date('m') == '12') {
-	 			echo '<link rel="stylesheet" href="'.$root.'css/snow.css">'."\n";
-			}
-		echo '<link rel="stylesheet" href="'.$root.'css/responsive.css">'."\n";
-	?>
-	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster|Indie+Flower|Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-</head>
 <body>	
 	<div id="wrapper">
 		<header>
@@ -58,7 +36,7 @@ if(!$_SESSION['login_user']==""){
 			</center>
 		</section>
 		<?php
-			include "footer.php";
+			include "includes/footer.php";
 		?>
 	</div>
 </body>
