@@ -43,9 +43,10 @@ require("includes/variables.php");
 						$count = mysql_num_rows($query);
 						while($row = mysql_fetch_object($query)) {
 							$log_name = htmlspecialchars($row->username);
-							$logFile = fopen("vt/logs/".$log_name.".txt", "w");
-							fclose($logFile);
-						}
+							$newFileName = './vt/logs/'.$log_name.".txt";
+							if(file_put_contents($newFileName, "Basic Setup Installed")!=false){
+								echo "File Created (".basename($newFileName).")<br />";
+							}
 	    			}else{
 	    				echo "You don't belong here";
 	    			}
