@@ -30,4 +30,5 @@ function randomPassword() {
 
     return implode($npcPass);
 }
+
 ?>

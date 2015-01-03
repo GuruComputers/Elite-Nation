@@ -5,7 +5,7 @@
 	include INCLUDES_PATH . 'head.php';
 	include INCLUDES_PATH . 'threatlevel.php';
 //	include INCLUDES_PATH . 'sidemenu.php';
-	include INCLUDES_PATH . 'gamebar.php';
+//	include INCLUDES_PATH . 'gamebar.php';
 //	require INCLUDES_PATH . 'variables.php';
 ?>
 <body>

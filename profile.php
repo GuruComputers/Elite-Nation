@@ -4,8 +4,9 @@ include 'session.php';
 include INCLUDES_PATH . 'head.php';
 include INCLUDES_PATH . 'threatlevel.php';
 include INCLUDES_PATH . 'sidemenu.php';
-include INCLUDES_PATH . 'gamebar.php';
 require("includes/variables.php");
+include INCLUDES_PATH . 'gamebar.php';
+
 ?>
 <body>
 	<div id="wrapper">
