@@ -36,6 +36,14 @@ require("includes/variables.php");
 			</div>
 		</nav>
 		<section>
+			<?php
+				$newLogDate = date('d-m-Y H:i:s'); 
+				$logDIR = 'vt/logs/'.$login_session.'.txt';
+				$myfile = fopen($logDIR, "a") or die("unable to open file");
+				$txt = "[".$newLogDate."] ".$login_session." logged in.\n";
+				fwrite($myfile, $txt);
+				fclose($myfile);
+			?>
 			<h3>Money:</h3><?php echo $money; ?>
 			<h3>Experience Points:</h3><?php echo $exp; ?>
 			<h3>Your IP:</h3>
