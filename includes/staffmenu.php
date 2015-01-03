@@ -3,5 +3,7 @@
 </tr>
 <tr class="cell">
 	<td height="23"><a href="ban.php">Ban Player</a></td>
+</tr>
+<tr class="cell">
 	<td height="23"><a href="init.php">Game Init</a></td>
 </tr>
