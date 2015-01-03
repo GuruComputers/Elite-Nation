@@ -1,6 +1,6 @@
 <?php
 include('session.php');
-require("includes/variables.php");
+require("variables.php");
 
 $nsql = "SELECT * FROM pm WHERE sendto='".mysql_real_escape_string($name)."' and del='1'";            
 $nres = mysql_query($nsql) or die(mysql_error());
