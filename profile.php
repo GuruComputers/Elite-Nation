@@ -24,16 +24,6 @@ require("includes/variables.php");
 				fwrite($myfile, $txt);
 				fclose($myfile);
 			?>
-			<h3>Money:</h3><?php echo $money; ?>
-			<h3>Experience Points:</h3><?php echo $exp; ?>
-			<h3>Your IP:</h3>
-			<?php 
-			if($genIP != ""){
-				echo $genIP;
-			}else{
-				echo $gameip;
-			} 
-			?>
 		</section>
 		<?php
 			include "includes/footer.php";
