@@ -5,7 +5,7 @@
 				<td class="header">Running Processes</td>
 			</tr>
 			<tr>
-				<td height="128" class="cell"><?php include ('processes.php'); ?></td>
+				<td height="128" class="cell"></td>
 			</tr>
 			<tr>
 				<td class="header">Player Information</td>
