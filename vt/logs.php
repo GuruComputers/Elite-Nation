@@ -30,18 +30,18 @@ require("../includes/variables.php");
 				}
 			?>
 			<form id="logWindow" name="logWindow" method="post">
-				<table width="90%" border="1" >
+				<table width="90%" border="0" align="center">
   					<tr>
-  						<td width="475" align="center" ><textarea name="updateLogContents" rows="10"></textarea></td>
+  						<td align="center" ><textarea style="width:100%; height:400px; resize:none" name="updateLogContents"></textarea></td>
   					</tr>
   					<tr>
-  						<td colspan="2" align="right" valign="top" ><input name="Send" type="submit" value="Update Log"  onfocus="if(this.blur)this.blur()"/></td>
+  						<td colspan="2" align="center" valign="top" ><input name="Send" type="submit" value="Update Log"  onfocus="if(this.blur)this.blur()"/></td>
   					</tr>
   				</table>
   			</form>
 		</section>
 		<?php
-			include "includes/footer.php";
+			include('../includes/footer.php');
 		?>
 	</div>
 </body>

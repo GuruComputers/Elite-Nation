@@ -1,9 +1,10 @@
 <?php
-include('session.php');
-include('includes/head.php');
-include('includes/threatlevel.php');
-include('includes/sidemenu.php');
-include('includes/gamebar.php');
+require('constants.php');
+include 'session.php';
+include INCLUDES_PATH . 'head.php';
+include INCLUDES_PATH . 'threatlevel.php';
+include INCLUDES_PATH . 'sidemenu.php';
+include INCLUDES_PATH . 'gamebar.php';
 require("includes/variables.php");
 ?>
 <body>
@@ -26,7 +27,7 @@ require("includes/variables.php");
 			?>
 		</section>
 		<?php
-			include "includes/footer.php";
+			include INCLUDES_PATH . 'footer.php';
 		?>
 	</div>
 </body>

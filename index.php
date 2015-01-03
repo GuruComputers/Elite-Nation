@@ -1,9 +1,10 @@
 <?php
+	require('constants.php');
 	include('login.php'); // Includes Login Script
 	if(!$_SESSION['login_user']==""){
 		header('Location: profile.php');
 	}
-	include 'includes/head.php';
+	include INCLUDES_PATH . 'head.php';
 ?>
 <body>	
 	<div id="wrapper">
@@ -36,7 +37,7 @@
 			</center>
 		</section>
 		<?php
-			include "includes/footer.php";
+			include INCLUDES_PATH . 'footer.php';
 		?>
 	</div>
 </body>
