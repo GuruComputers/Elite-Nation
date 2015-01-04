@@ -1,1 +1,1 @@
-<input name="Send" type="submit" value="Update Log"  onfocus="if(this.blur)this.blur()" />
+<input name="Send" type="submit" value="UpdateLog"  onfocus="if(this.blur)this.blur()" />

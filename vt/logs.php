@@ -35,21 +35,22 @@
 		<section>
 			<?php
 				$currentLog = 'logs/'.$login_session.'.txt';
-				function Read()
-				{
-					echo @file_get_contents($currentLog);
-				};
+				$currentView = file_get_contents($currentLog);
 
-				function Write()
-				{
-					$logUpdate = $_POST["updateLogContents"];
-					@file_put_contents($currentLog, $logUpdate);
+				if(isset($_POST['Send'])){
+					$logUpdate = $_POST['updateLogContents'];
+					if(!empty($_POST['updateLogContents'])){
+						file_put_contents($currentLog, $logUpdate) or die("Oops");
+					} else {
+						file_put_contents($currentLog, ' ') or die("Still Oops");
+					}
+					
 				}
 			?>
 			<form id="logWindow" name="logWindow" method="post">
 				<table id="logTable" width="90%" border="0" align="center">
   					<tr>
-  						<td align="center" ><textarea style="width:100%; height:400px; resize:none" name="updateLogContents"></textarea></td>
+  						<td align="center" ><textarea style="width:100%; height:400px; resize:none" name="updateLogContents"><?php echo $currentView; ?></textarea></td>
   					</tr>
   					<tr>
   						<td colspan="2" align="center" valign="top" id="AntiLogBot"> AntiBot System Please Wait...</td>
