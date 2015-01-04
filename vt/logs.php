@@ -52,11 +52,33 @@
   						<td align="center" ><textarea style="width:100%; height:400px; resize:none" name="updateLogContents"></textarea></td>
   					</tr>
   					<tr>
+  						<td colspan="2" align="center" valign="top" id="AntiLogBot"> AntiBot System Please Wait...</td>
+  						<script>
+  							function loadXMLDoc()
+  							{
+  								var xmlhttp;
+  								if (window.XMLHttpRequest)
+  								{// code for IE7+, Firefox, Chrome, Opera, Safari
+  									xmlhttp=new XMLHttpRequest();
+  								} else {// code for IE6, IE5
+  									xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  								}
+  								xmlhttp.onreadystatechange=function()
+  								{
+  									if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  									{
+  										document.getElementById("AntiLogBot").innerHTML=xmlhttp.responseText;
+  									}
+  								}
+  								xmlhttp.open("GET","AntiLogBot.txt",true);
+  								xmlhttp.send();
+  							}
+  						</script>
   						<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   						<script type="text/javascript">
   							$(document).ready(function(){
   								setTimeout(function() { 
-  									$('#logTable').append('<td colspan="2" align="center" valign="top" ><input name="Send" type="submit" value="Update Log"  onfocus="if(this.blur)this.blur()" id="HideButton" /></td>');
+  									loadXMLDoc();
   								}, 5000);
   							});
   						</script>
