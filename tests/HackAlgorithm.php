@@ -16,7 +16,7 @@ $Max_Time = 300;
 $Hack_Speed = 0;
 
 //CHANGE THIS SECTION WITH IMPORTED VALUES
-$target_firewall = 11;
+$target_firewall = 12;
 $local_waterdrill = 1;
 $local_internet = 10;
 $target_internet = 1;
