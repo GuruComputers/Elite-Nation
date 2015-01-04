@@ -52,7 +52,16 @@
   						<td align="center" ><textarea style="width:100%; height:400px; resize:none" name="updateLogContents"></textarea></td>
   					</tr>
   					<tr>
-  						<td colspan="2" align="center" valign="top" ><input name="Send" type="submit" value="Update Log"  onfocus="if(this.blur)this.blur()"/></td>
+  						<td colspan="2" align="center" valign="top" ><input name="Send" type="submit" value="Update Log"  onfocus="if(this.blur)this.blur()" id="HideButton" /></td>
+  						<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  						<script type="text/javascript">
+  							$(document).ready(function(){
+  								$( "#HideButton" ).prop( "disabled", true );
+  								setTimeout(function() { 
+  									$( "#HideButton" ).prop( "disabled", false );
+  								}, 5000);
+  							});
+  						</script>
   					</tr>
   				</table>
   			</form>
