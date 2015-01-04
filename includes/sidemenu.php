@@ -21,12 +21,12 @@
 					</tr>
 					<tr>
 						<td valign="top" class="cell">
-							<a href="profile.php">Hardware</a><br />
-							<a href="vt/processes.php">Processes</a><br />
-							<a href="vt/logs.php">Local Logs</a><br />
-							<a href="vt/files.php">Files</a><br />
-							<a href="vt/internet.php">Internet</a><br />
-							<a href="vt/slaves.php">My Slaves</a><br />
+							<a href="../profile.php">Hardware</a><br />
+							<a href="../vt/processes.php">Processes</a><br />
+							<a href="../vt/logs.php">Local Logs</a><br />
+							<a href="../vt/files.php">Files</a><br />
+							<a href="../vt/internet.php">Internet</a><br />
+							<a href="../vt/slaves.php">My Slaves</a><br />
 						</td>
 					</tr>
 
