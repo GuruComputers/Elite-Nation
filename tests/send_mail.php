@@ -15,7 +15,9 @@
  
     mail($to, $subject, $message, $headers); 
 
-    echo "Email Sent!";
+    if (isset($_POST['Register'])) {
+      echo "Email Sent!";
+    }
 
 ?>
 
